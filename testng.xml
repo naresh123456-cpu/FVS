@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testCases.CustomListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/NareshRagula/IdeaProjects/FVSOnline">
+        <classes>
+            <class name="com.base.TestBase">
+                <methods>
+                    <include name="initialization"/>
+                </methods>
+            </class>
+            <class name="testCases.CreatingProject">
+                <methods>
+                    <include name="createProject"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
